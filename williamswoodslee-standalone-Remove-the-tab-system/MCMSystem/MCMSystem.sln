@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCMSystem", "MCMSystem\MCMSystem.csproj", "{D953C792-54F7-44A8-AED6-F5A364C42B0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D953C792-54F7-44A8-AED6-F5A364C42B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D953C792-54F7-44A8-AED6-F5A364C42B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D953C792-54F7-44A8-AED6-F5A364C42B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D953C792-54F7-44A8-AED6-F5A364C42B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C24DFFDA-694F-4959-9CFB-B2C3F312D594}
+	EndGlobalSection
+EndGlobal

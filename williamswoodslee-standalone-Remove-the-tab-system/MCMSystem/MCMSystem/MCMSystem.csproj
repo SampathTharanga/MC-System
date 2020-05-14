@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D953C792-54F7-44A8-AED6-F5A364C42B0F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MCMSystem</RootNamespace>
+    <AssemblyName>MCMSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Delivery Note\ucDeliveryNoteReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Delivery Note\ucDeliveryNoteReg.Designer.cs">
+      <DependentUpon>ucDeliveryNoteReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery Note\ucDeliveryNoteView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Delivery Note\ucDeliveryNoteView.Designer.cs">
+      <DependentUpon>ucDeliveryNoteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home\ucHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Home\ucHome.Designer.cs">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\FormSalesReturnAgreement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\FormSalesReturnAgreement.Designer.cs">
+      <DependentUpon>FormSalesReturnAgreement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ucInvoiceReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\ucInvoiceReg.Designer.cs">
+      <DependentUpon>ucInvoiceReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ucInvoiceView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\ucInvoiceView.Designer.cs">
+      <DependentUpon>ucInvoiceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ucSalesReturn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\ucSalesReturn.Designer.cs">
+      <DependentUpon>ucSalesReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\ucPurchaseOrderReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\ucPurchaseOrderReg.Designer.cs">
+      <DependentUpon>ucPurchaseOrderReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase Order\ucPurchaseOrderView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase Order\ucPurchaseOrderView.Designer.cs">
+      <DependentUpon>ucPurchaseOrderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\ucPaymentReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payment\ucPaymentReg.Designer.cs">
+      <DependentUpon>ucPaymentReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\ucPaymentView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payment\ucPaymentView.Designer.cs">
+      <DependentUpon>ucPaymentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ucProductReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Product\ucProductReg.Designer.cs">
+      <DependentUpon>ucProductReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ucProductView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Product\ucProductView.Designer.cs">
+      <DependentUpon>ucProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\ucProjectReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\ucProjectReg.Designer.cs">
+      <DependentUpon>ucProjectReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\ucProjectView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\ucProjectView.Designer.cs">
+      <DependentUpon>ucProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\ucQuotationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quotation\ucQuotationView.Designer.cs">
+      <DependentUpon>ucQuotationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\ucQutotationReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Quotation\ucQutotationReg.Designer.cs">
+      <DependentUpon>ucQutotationReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CommonController.cs" />
+    <Compile Include="Customer\ucCustomerReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\ucCustomerReg.Designer.cs">
+      <DependentUpon>ucCustomerReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ucCustomerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\ucCustomerView.Designer.cs">
+      <DependentUpon>ucCustomerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Driver\ucDriverRegistration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Driver\ucDriverRegistration.Designer.cs">
+      <DependentUpon>ucDriverRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\ucDriverUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Driver\ucDriverUpdate.Designer.cs">
+      <DependentUpon>ucDriverUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\ucDriverView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Driver\ucDriverView.Designer.cs">
+      <DependentUpon>ucDriverView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Style.cs" />
+    <Compile Include="User\ucUserReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\ucUserReg.Designer.cs">
+      <DependentUpon>ucUserReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\ucUsersDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\ucUsersDetails.Designer.cs">
+      <DependentUpon>ucUsersDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle\ucVehicleRegForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicle\ucVehicleRegForm.Designer.cs">
+      <DependentUpon>ucVehicleRegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle\ucVehicleRegView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vehicle\ucVehicleRegView.Designer.cs">
+      <DependentUpon>ucVehicleRegView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Customer\ucCustomerReg.resx">
+      <DependentUpon>ucCustomerReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\ucCustomerView.resx">
+      <DependentUpon>ucCustomerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery Note\ucDeliveryNoteReg.resx">
+      <DependentUpon>ucDeliveryNoteReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery Note\ucDeliveryNoteView.resx">
+      <DependentUpon>ucDeliveryNoteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home\ucHome.resx">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\FormSalesReturnAgreement.resx">
+      <DependentUpon>FormSalesReturnAgreement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\ucInvoiceReg.resx">
+      <DependentUpon>ucInvoiceReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\ucInvoiceView.resx">
+      <DependentUpon>ucInvoiceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\ucSalesReturn.resx">
+      <DependentUpon>ucSalesReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\ucPurchaseOrderReg.resx">
+      <DependentUpon>ucPurchaseOrderReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase Order\ucPurchaseOrderView.resx">
+      <DependentUpon>ucPurchaseOrderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\ucPaymentReg.resx">
+      <DependentUpon>ucPaymentReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\ucPaymentView.resx">
+      <DependentUpon>ucPaymentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\ucProductReg.resx">
+      <DependentUpon>ucProductReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\ucProductView.resx">
+      <DependentUpon>ucProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ucProjectReg.resx">
+      <DependentUpon>ucProjectReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ucProjectView.resx">
+      <DependentUpon>ucProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Driver\ucDriverRegistration.resx">
+      <DependentUpon>ucDriverRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver\ucDriverUpdate.resx">
+      <DependentUpon>ucDriverUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver\ucDriverView.resx">
+      <DependentUpon>ucDriverView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quotation\ucQuotationView.resx">
+      <DependentUpon>ucQuotationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quotation\ucQutotationReg.resx">
+      <DependentUpon>ucQutotationReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ucUserReg.resx">
+      <DependentUpon>ucUserReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ucUsersDetails.resx">
+      <DependentUpon>ucUsersDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle\ucVehicleRegForm.resx">
+      <DependentUpon>ucVehicleRegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle\ucVehicleRegView.resx">
+      <DependentUpon>ucVehicleRegView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-page-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vehicle-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report-card-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-you-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-quote-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+    <Folder Include="Setting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice-view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales-return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-quotation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quotation-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-vehicle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vehicle-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-driver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification-available-white.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
